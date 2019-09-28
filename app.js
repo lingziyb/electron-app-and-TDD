@@ -9,7 +9,7 @@ function createWindow() {
     }
   });
 
-  if (process.env.NODE_DNV === "DEV") {
+  if (process.env.NODE_ENV === "DEV") {
     win.loadURL("http://localhost:8080/");
   } else {
     win.loadURL(`file://${process.cwd()}/dist/index.html`);
