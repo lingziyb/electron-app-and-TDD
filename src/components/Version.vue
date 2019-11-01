@@ -5,6 +5,7 @@
 </template>
 
 <script>
+window.require = require;
 const electron = window.require("electron");
 export default {
   methods: {
